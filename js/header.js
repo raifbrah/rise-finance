@@ -37,14 +37,12 @@ burgerBtn.onclick = () => {
 
 function open() {
   header.classList.add('open')
-  // bgShadow.classList.add('open')
 
   document.body.style.overflowY = 'hidden'
 }
 
 function close() {
   header.classList.remove('open')
-  // bgShadow.classList.remove('open')
 
   document.body.style.overflowY = 'auto'
 }
