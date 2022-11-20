@@ -266,10 +266,9 @@ hr {
   align-items: center;
   font-weight: 400;
 
-  transition: .3s;
+  transition: 200ms;
 }
-.header::before,
-.before-visible.header::before {
+.header::before {
   content: "";
   z-index: inherit;
   position: absolute;
@@ -281,6 +280,7 @@ hr {
   opacity: 0;
   background: rgba(0,0,0,0.8);
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   transition: inherit;
 }
 .before-visible.header::before {
